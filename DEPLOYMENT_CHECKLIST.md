@@ -4,10 +4,10 @@
 - [x] Five cases labeled only A-E
 - [x] Patient and run identifiers excluded
 - [x] Only the frozen true/false outcome is included for post-choice feedback
-- [x] Seizure onset annotations excluded
+- [x] Absolute seizure onset annotations excluded; relative onset appears only after choice for true alarms
 - [x] Unblinding key excluded
 - [x] Local HPC paths excluded
-- [x] Pre-alarm-only navigation enforced
+- [x] Pre-alarm-only navigation enforced before choice; 15-minute post-alarm review unlocked afterward
 - [x] Binary choice followed by immediate benchmark feedback
 - [x] Push this directory as the root of `gh-pages`
 - [x] Enable GitHub Pages from `gh-pages` `/`

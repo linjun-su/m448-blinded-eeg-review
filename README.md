@@ -4,13 +4,13 @@ This directory is the complete GitHub Pages site for the causal EEG alarm self-c
 
 Open `index.html` through the published Pages URL. The page is self-contained and requires no server, installation, or login. It provides five 18-channel EEG cases, causal pre-alarm navigation, display controls, and one binary `True alarm` / `False alarm` question.
 
-After a choice, the page immediately reports whether it is correct and displays the frozen benchmark answer. The website does not upload or centrally collect responses.
+After a choice, the page immediately reports whether it is correct and displays the frozen benchmark answer. It then unlocks 15 minutes of post-alarm EEG. True alarms also show the time from alarm to annotated onset and a green clinical-onset marker. The website does not upload or centrally collect responses.
 
 ## Data scope
 
 - No patient identifiers, run identifiers, seizure onset times, lead times, or unblinding key are included.
 - The binary alarm outcomes are embedded solely to provide immediate feedback; this is a self-check page, not an independent blinded-rating instrument.
-- Only pre-alarm EEG is available; navigation cannot move past the alarm.
+- Before a choice, navigation cannot move past the alarm. Post-alarm EEG is unlocked only after feedback.
 - The embedded EEG is from the public, de-identified CHB-MIT Scalp EEG Database.
 - The unblinded review key and research outputs must remain outside this Pages directory.
 
@@ -21,5 +21,5 @@ Publish the contents of this directory at the root of a `gh-pages` branch. The `
 ## Frozen artifact
 
 - Entry point: `index.html`
-- SHA-256: `6479edb25b299e1469f1c3cdf06e8cf52e8e6777309ef378fadfa1e8c4c167e5`
+- SHA-256: `04d521bc6125900dc325211bf36c310622affb2f176ee17c69d769db4a9a926c`
 - Frozen: 2026-08-12
