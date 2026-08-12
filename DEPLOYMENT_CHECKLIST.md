@@ -9,6 +9,6 @@
 - [x] Local HPC paths excluded
 - [x] Pre-alarm-only navigation enforced
 - [x] Browser-local ratings and manual blinded CSV export
-- [ ] Push this directory as the root of `gh-pages`
-- [ ] Enable GitHub Pages from `gh-pages` `/`
-- [ ] Verify the public URL in a private browser window
+- [x] Push this directory as the root of `gh-pages`
+- [x] Enable GitHub Pages from `gh-pages` `/`
+- [x] Verify the public URL without GitHub authentication
