@@ -1,14 +1,15 @@
 # Deployment checklist
 
 - [x] Single self-contained static HTML entry point
-- [x] Five cases labeled only A-E
-- [x] Patient and run identifiers excluded
-- [x] Only the frozen true/false outcome is included for post-choice feedback
-- [x] Absolute seizure onset annotations excluded; relative onset appears only after choice for true alarms
-- [x] Unblinding key excluded
-- [x] Local HPC paths excluded
-- [x] Pre-alarm-only navigation enforced before choice; 15-minute post-alarm review unlocked afterward
-- [x] Binary choice followed by immediate benchmark feedback
-- [x] Push this directory as the root of `gh-pages`
-- [x] Enable GitHub Pages from `gh-pages` `/`
-- [x] Verify the public URL without GitHub authentication
+- [x] All 283 emitted alarms use shuffled case numbers only
+- [x] 63 matched true, 194 formal false, and 26 not-independently-scored alarms accounted for
+- [x] Patient and run identifiers hidden in the interface
+- [x] Absolute seizure onset annotations excluded; relative lead appears only after choice for true alarms
+- [x] Local HPC paths and credentials excluded
+- [x] Actual 15-second, 18-channel EEG displayed for every alarm
+- [x] `Go to alarm` navigation label used
+- [x] Up-to-65-minute PhysioNet LightWAVE source links revealed after choice
+- [x] Immediate benchmark feedback for all three scoring categories
+- [x] Five-case embedded deep viewer retained separately
+- [ ] Push this directory as the root of `gh-pages`
+- [ ] Verify the public URL without GitHub authentication
