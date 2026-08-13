@@ -8,7 +8,8 @@
 - [x] Local HPC paths and credentials excluded
 - [x] Actual 15-second, 18-channel EEG displayed for every alarm
 - [x] `Go to alarm` navigation label used
-- [x] Ten minutes of pre-alarm EEG embedded for all 283 alarms
+- [x] Fifteen minutes before and after each of 257 independently scored alarms
+- [x] Protocol-excluded alarms retained only in the internal audit ledger
 - [x] Per-case assets loaded on demand; post-alarm EEG remains unavailable before choice
 - [x] Up-to-65-minute PhysioNet LightWAVE source links revealed after choice
 - [x] Immediate benchmark feedback for all three scoring categories
