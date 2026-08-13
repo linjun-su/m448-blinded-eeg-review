@@ -4,7 +4,7 @@ This directory is the complete GitHub Pages site for the causal EEG alarm self-c
 
 Open `index.html` through the published Pages URL. The site requires no server, installation, or login. It contains the 257 independently scored M448 alarms, each with 15 minutes before and 15 minutes after the alarm in actual 18-channel EEG. EEG is stored as one losslessly compressed asset per case, so the browser downloads only the case currently being reviewed. The post-alarm half remains locked until the reviewer chooses an answer.
 
-After a choice, the page immediately reports whether it is correct and displays the frozen benchmark answer. It also unlocks links to the official PhysioNet LightWAVE viewer for every source EDF needed to inspect up to 65 minutes after the alarm. A retained five-case deep viewer is available at `five-case-deep-review.html`; it embeds 10 minutes before and 15 minutes after those five alarms. The website does not upload or centrally collect responses.
+After a choice, the page immediately reports whether it is correct and displays the frozen benchmark answer. It also unlocks links to the official PhysioNet LightWAVE viewer for every source EDF needed to inspect up to 65 minutes after the alarm. The website does not upload or centrally collect responses.
 
 ## Data scope
 
@@ -27,7 +27,5 @@ Publish the contents of this directory at the root of a `gh-pages` branch. The `
 - Cases: 257 independently scored alarms
 - Context: 15 minutes before and 15 minutes after each alarm; the latter is answer-locked
 - Waveform encoding: 128 Hz, int16 physical µV, lossless time-delta plus gzip
-- Entry-point SHA-256: `616f8b33373afd7a80edaa16e81e970317703ca28c17f2160fdab92ceabd268e`
-- Five-case deep viewer: `five-case-deep-review.html`
-- Deep-viewer SHA-256: `d2f4864741b7fb23bbaf9691e4d987414e02232fa19c00e259909c8fb324ef3a`
+- Entry-point SHA-256: `8106f8fe7ec90f79e6ecce18d366c67d4a1d51f511d68a7bb20610cece3c8520`
 - Frozen: 2026-08-13
