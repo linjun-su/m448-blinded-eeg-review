@@ -1,7 +1,8 @@
 {
+  "alarm_postprocessor": "M450 nested-safe Hjorth-complexity ceiling",
   "asset_directory": "case_data",
-  "asset_total_bytes": 796948488,
-  "cases": 257,
+  "asset_total_bytes": 755607180,
+  "cases": 242,
   "contains_absolute_seizure_onsets": false,
   "contains_deidentified_source_record_links": true,
   "contains_outcome_labels": true,
@@ -9,12 +10,16 @@
   "contains_relative_seizure_onsets": true,
   "context_sec": 900,
   "excluded_unscored_cases": true,
+  "fa_per_hour": 0.21765494064790655,
+  "false_alarms": 179,
   "future_context_sec": 900,
   "interaction": "browse_all_or_fixed_seed_balanced_30_case_test_with_instant_feedback",
   "mode": "quiz_static_split_assets",
   "output": "index.html",
+  "parent_alarm_policy": "M448",
   "sampling_rate_hz": 128,
-  "size_bytes": 157397,
+  "size_bytes": 149989,
   "split_assets": true,
-  "status": "complete"
+  "status": "complete",
+  "true_alarms": 63
 }
