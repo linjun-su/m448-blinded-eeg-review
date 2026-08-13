@@ -23,7 +23,7 @@ Publish the contents of this directory at the root of a `gh-pages` branch. The `
 
 - Entry point: `index.html`
 - Cases: 283 emitted alarms
-- SHA-256: `6971116a2bb446e493fc2a252a6812610d30b61655196105b6c4cc90ab52899c`
+- SHA-256: `56a6ebdcdc5cacfeb5c26efe4e9babd13cd475258e396af3a0e7190c87f62377`
 - Five-case deep viewer: `five-case-deep-review.html`
-- Deep-viewer SHA-256: `04d521bc6125900dc325211bf36c310622affb2f176ee17c69d769db4a9a926c`
+- Deep-viewer SHA-256: `d2f4864741b7fb23bbaf9691e4d987414e02232fa19c00e259909c8fb324ef3a`
 - Frozen: 2026-08-12
