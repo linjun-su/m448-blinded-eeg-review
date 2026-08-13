@@ -27,5 +27,5 @@ Publish the contents of this directory at the root of a `gh-pages` branch. The `
 - Cases: 257 independently scored alarms
 - Context: 15 minutes before and 15 minutes after each alarm; the latter is answer-locked
 - Waveform encoding: 128 Hz, int16 physical µV, lossless time-delta plus gzip
-- Entry-point SHA-256: `8106f8fe7ec90f79e6ecce18d366c67d4a1d51f511d68a7bb20610cece3c8520`
+- Entry-point SHA-256: `462ab770a856bc6dec8d34954c9d808f7f8e14aa8c7429fc62cfb1e0b94662bb`
 - Frozen: 2026-08-13
