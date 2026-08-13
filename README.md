@@ -26,8 +26,8 @@ Publish the contents of this directory at the root of a `gh-pages` branch. The `
 ## Frozen artifact
 
 - Entry point: `index.html`; waveform assets: `case_data/case_*.d16gz`
-- Cases: 242 independently scored alarms
+- Cases: 242 independently scored alarms, consecutively numbered 001–242
 - Context: 15 minutes before and 15 minutes after each alarm; the latter is answer-locked
 - Waveform encoding: 128 Hz, int16 physical µV, lossless time-delta plus gzip
-- Entry-point SHA-256: `75e14b18fa914be6bc5b7b1d9b7afb7c213a4b401edabffc506bf8c13461ec68`
+- Entry-point SHA-256: `b071810508192ff5365893a3c2d0d0bd5a42c36ab0f2ca05da2fef785fe55a4c`
 - Frozen: 2026-08-13

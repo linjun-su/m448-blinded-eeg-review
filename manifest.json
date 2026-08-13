@@ -2,6 +2,7 @@
   "alarm_postprocessor": "M450 nested-safe Hjorth-complexity ceiling",
   "asset_directory": "case_data",
   "asset_total_bytes": 755607180,
+  "case_ids": "consecutive_001_to_242",
   "cases": 242,
   "contains_absolute_seizure_onsets": false,
   "contains_deidentified_source_record_links": true,
