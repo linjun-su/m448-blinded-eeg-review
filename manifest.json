@@ -10,11 +10,11 @@
   "context_sec": 900,
   "excluded_unscored_cases": true,
   "future_context_sec": 900,
-  "interaction": "instant_outcome_feedback",
+  "interaction": "browse_all_or_fixed_seed_balanced_30_case_test_with_instant_feedback",
   "mode": "quiz_static_split_assets",
   "output": "index.html",
   "sampling_rate_hz": 128,
-  "size_bytes": 151856,
+  "size_bytes": 157397,
   "split_assets": true,
   "status": "complete"
 }
