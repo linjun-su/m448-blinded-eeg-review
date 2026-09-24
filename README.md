@@ -1,36 +1,34 @@
-# EEG expert review — M678
+# M677 EEG alarm self-check / M678 source-anomaly gallery
 
-This replaces the active M450 self-check with outcome-masked review of every
-emitted alarm from frozen M677 strict short15, plus a separate source-anomaly
-gallery. Outcome keys and source mappings are not deployed. Old NAS artifacts
-and the previous deployment commit are retained; there is no history rewrite.
+Legacy self-check layout restored at the user's request: browse all cases,
+immediate answer feedback, balanced30-case tests, original page/amplitude/
+polarity/timeline controls and15-minute pre/post context. This intentionally
+publishes answer labels and is not strict independent blinding.
 
-The full model replay includes 23 patient groups and 135 targets; the website
-is a collection of short alarm excerpts, not all 135 targets or all recorded EEG.
-It includes protected/unscored alarms as well as formally scored alarms. No
-clinical outcome can be inferred just from inclusion in this set.
+Current frozen M677 strict short15:259 emitted alarms;47 one-to-one credited,
+185 formal false alarms,27 review-only. Balanced tests draw15 true and15 false
+only; review-only cases are not a third clinical class. Full model evaluation
+remains23 groups/135 targets, not259 targets. No retraining or new performance.
 
-Native 256 Hz, unfiltered calibrated microvolts, little-endian channel-major
-float32 gzip assets. No gap filling. PRE 60 seconds, POST 20 seconds, anomaly
-context 120 seconds before / 60 after. Assets are verified by SHA256 in browser.
-Visible-window constant centering is optional; the common physical scale is
-explicit. No independently normalized lead amplitudes or invented waveforms.
+Display matches the legacy transformation: zero-phase fourth-order Butterworth
+0.5–60Hz,128Hz export,rounded int16 physicalµV,delta16+gzip. This retrospective
+display filter uses future samples; it is not the causal prediction input.
+Missing data remain missing. Each case loads on demand; no bulk browser download.
 
-POST requires a saved PRE opinion in the interface. This is not a secure access
-control: static POST assets can be retrieved directly. The anomaly gallery is
-outcome-exposed/retrospectively selected and can compromise later blind opinions;
-the browser records gallery exposure in exported notes. This is not independent
-validation, a diagnosis service, or an alarm-veto validation.
+The separate anomaly gallery preserves15 minutes each side and adds specific
+source observations,questions,and native unfiltered256Hz two-second figures.
+Display-filtered EEG must not be used to verify digital-zero claims. Gallery
+notes are saved locally and exported manually; no automatic collection. No
+identifying information should be entered. Looking at known examples compromises
+later blind opinions about overlapping examples.
 
-Notes stay in versioned localStorage. Export JSON and send to the study owner;
-the site does not collect responses centrally. Import merges saved notes. Do not
-enter identifying information. Export before clearing browser data.
+Data: Guttag,J.(2010),CHB-MIT Scalp EEG Database v1.0.0,PhysioNet,
+https://doi.org/10.13026/C2K01R,Open Data Commons Attribution1.0:
+https://opendatacommons.org/licenses/by/1-0/.
+See Ali Shoeb,MIT PhD thesis(2009).
+Only public deidentified CHB-MIT-derived excerpts are included. No private
+clinical data,models,internal paths or source audit records are deployed.
 
-Data attribution: Guttag, J. (2010), CHB-MIT Scalp EEG Database v1.0.0, PhysioNet,
-https://doi.org/10.13026/C2K01R. Public derived excerpts under Open Data Commons
-Attribution License v1.0: https://opendatacommons.org/licenses/by/1-0/.
-See also Ali Shoeb, MIT PhD thesis (2009). Source dataset:
-https://physionet.org/content/chbmit/1.0.0/.
-
-Only this public directory belongs on gh-pages. Never publish the parent folder,
-PRIVATE_KEY.json, source audit, raw EDF headers, research caches or models.
+Old active-site assets are replaced,not offered as a separate legacy page.
+Original experimental results and original EEG remain on NAS; existing Git
+history is not rewritten.
